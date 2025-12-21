@@ -1,7 +1,9 @@
+@use "variables";
+
 .header{
     padding: 12px;
     width: 100%;
-    background-color: style.$background-dark-color;
+    background-color: variables.$background-dark-color;
 
     &__container {
         max-width: 1920px;
@@ -29,7 +31,7 @@
     }
 
     &__item:hover {
-        color: style.$text-dark-color;
+        color: variables.$text-dark-color;
         transition: color 500ms;
     }
 }

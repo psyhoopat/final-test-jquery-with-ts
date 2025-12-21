@@ -1,0 +1,85 @@
+@use "./header";
+@use "./variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: variables.$text-main-font-family, serif;
+    color: variables.$text-main-color;
+    list-style-type: none;
+}
+
+h1 { font-size: variables.$text-h1-font-size; }
+h2 { font-size: variables.$text-h2-font-size; }
+h3 { font-size: variables.$text-h3-font-size; }
+p, li, a { font-size: variables.$text-p-font-size; }
+
+body {
+    /* transition: 1s; */
+    background-color: variables.$background-main-color;
+    margin: 0;
+    min-width: 300px;
+}
+
+a {
+    text-decoration: none;
+}
+
+form {
+    max-width: 600px;
+    border-radius: 18px;
+}
+
+form h2 {
+    margin: 0;
+}
+
+input {
+    color: black;
+    font-size: 1.01em;
+    height: 40px;
+    width: 100%;
+    margin: 15px 0 15px 0;
+    display: block;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid variables.$accent-main-color;
+}
+
+.form__label {
+    margin: 15px 0 15px 0;
+    display: block;
+}
+
+input:focus {
+    outline: 3px solid variables.$accent-dark-color;
+}
+
+input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    display: inline;
+    margin: 15px 0 15px 0;
+
+}
+
+button {
+    background-color: variables.$accent-light-color;
+    border: none;
+    padding: 10px;
+    min-width: 110px;
+    font-size: 14px;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: variables.$accent-dark-color;
+}
+
+button[disabled] {
+    background-color: variables.$accent-dark-color;
+    opacity: 0.6;
+    cursor: not-allowed;
+}

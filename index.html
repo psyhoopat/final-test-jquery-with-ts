@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./dist/styles.css">
+    <link rel="stylesheet" href="./lib/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./lib/slick-1.8.1/slick/slick-theme.css">
     <!-- lib -->
     <script src="./lib/jquery-3.7.1.min.js"></script>
     <script src="./lib/slick-1.8.1/slick/slick.min.js"></script>
-    <link rel="stylesheet" href="./lib/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./lib/slick-1.8.1/slick/slick-theme.css">
+
 </head>
 <body>
     <header class="header">
@@ -28,6 +29,65 @@
         </div>
     </header>
 
+
+    <main class="main">
+        <div class="box">
+
+            <div class="slider-sub">
+                <div class="slider">
+                        <img class="slider-img" src="static/img/slider/slide1.jpeg" alt="slider">
+                        <img class="slider-img" src="static/img/slider/slide2.webp" alt="slider">
+                        <img class="slider-img" src="static/img/slider/slide3.jpg" alt="slider">
+                </div>
+            </div>
+
+            <div class="block">
+                <h1 class="center-text">Content</h1>
+                <div class="flex-block">
+                    <div class="content">
+                        <div class="block-img">
+                            <img class="custom-img" src="static/img/cards/card1.png" alt="best"/>
+                        </div>
+                        <h3>title</h3>
+                        <p>text</p>
+                        <button class="button right__button">Кнопка</button>
+                    </div>
+                    <div class="content">
+                        <div class="block-img">
+                            <img class="custom-img" src="static/img/cards/card2.jpg" alt="best"/>
+                        </div>
+                        <h3>title</h3>
+                        <p>card</p>
+                        <button class="button right__button">Кнопка</button>
+                    </div>
+                    <div class="content">
+                        <div class="block-img">
+                            <img class="custom-img" src="static/img/cards/card3.jpg" alt="best"/>
+                        </div>
+                        <h3>title</h3>
+                        <p>text</p>
+                        <button class="button right__button">Кнопка</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+                <form>
+                    <div class="content">
+                        <h2>Форма</h2>
+                        <div>
+                            <input
+                                type="text"
+                                placeholder="введите имя"
+                            />
+                        </div>
+                        <button class="button" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
     
     <script src="./static/script.js"></script>
 </body>

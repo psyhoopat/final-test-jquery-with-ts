@@ -1,7 +1,13 @@
 @use "./header";
+@use "./app";
 @use "./variables";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --text-h1-font-size: 3em;
+    --text-h2-font-size: 2em;
+}
 
 * {
     box-sizing: border-box;
@@ -10,8 +16,8 @@
     list-style-type: none;
 }
 
-h1 { font-size: variables.$text-h1-font-size; }
-h2 { font-size: variables.$text-h2-font-size; }
+h1 { font-size: var(--text-h1-font-size); }
+h2 { font-size: var(--text-h2-font-size); }
 h3 { font-size: variables.$text-h3-font-size; }
 p, li, a { font-size: variables.$text-p-font-size; }
 
@@ -64,7 +70,7 @@ input[type="checkbox"] {
 
 }
 
-button {
+.button {
     background-color: variables.$accent-light-color;
     border: none;
     padding: 10px;
@@ -74,12 +80,19 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.button:hover {
     background-color: variables.$accent-dark-color;
 }
 
-button[disabled] {
+.button[disabled] {
     background-color: variables.$accent-dark-color;
     opacity: 0.6;
     cursor: not-allowed;
+}
+
+@media screen and (max-width: 800px) {
+    :root {
+        --text-h1-font-size: 3em;
+        --text-h2-font-size: 2em;
+    }
 }

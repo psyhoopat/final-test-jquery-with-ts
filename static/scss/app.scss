@@ -1,0 +1,116 @@
+/* Start create content elements*/
+@use 'variables';
+
+.box {
+    max-width: variables.$box-width;
+    margin: auto;
+    min-height: 87vh;
+}
+
+.block {
+    margin: 4em 0 4em 0;
+}
+
+.block-img {
+    height: 300px;
+}
+
+.block > form {
+    margin: auto;
+}
+
+.content {
+    background-color: variables.$background-light-color;
+    padding: 20px;
+}
+
+form > .content {
+    border-radius: 18px;
+}
+
+.flex-block {
+    margin: 0 0 2em 0;
+}
+
+.flex-block .content p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.flex-block {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-block > .content {
+    width: 300px;
+    flex-grow: 1;
+    transition: 400ms;
+}
+
+.flex-block > .content:hover {
+    transform: scale(1.02) rotate(1deg);
+    transition: 400ms;
+}
+
+.display-flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* End create content elements*/
+/* Start create elements */
+
+.center-text {
+    text-align: center;
+}
+
+.right__button {
+    float: right;
+}
+
+.slider {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.slider-img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.custom-img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+/* End create custom elements */
+/* Start adaptive */
+
+@media screen and (max-width: 800px) {
+    :root {
+        --text-h1-font-size: 3em;
+        --text-h2-font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .slider {
+        width: 100%;
+    }
+
+    .flex-block > .content {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* End adaptive */
